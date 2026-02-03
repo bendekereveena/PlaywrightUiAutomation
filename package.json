@@ -1,0 +1,37 @@
+{
+  "name": "playwright-ui-automation",
+  "version": "1.0.0",
+  "description": "Playwright UI Automation Framework for Google/Gmail with Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:gmail": "npx playwright test tests/gmail/",
+    "test:google": "npx playwright test tests/google/",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen",
+    "install:browsers": "npx playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "typescript",
+    "pom",
+    "google",
+    "gmail"
+  ],
+  "author": "Veena",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  }
+}

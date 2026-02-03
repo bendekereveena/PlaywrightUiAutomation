@@ -1,0 +1,40 @@
+{
+  "baseUrl": "https://www.google.com",
+  "gmailUrl": "https://mail.google.com",
+  "gmailSignUpUrl": "https://accounts.google.com/signup",
+  "credentials": {
+    "username": "testuser.automation",
+    "password": "TestPassword123!",
+    "recoveryEmail": "recovery.email@example.com",
+    "recoveryPhone": "+1234567890"
+  },
+  "timeouts": {
+    "short": 5000,
+    "medium": 10000,
+    "long": 30000,
+    "pageLoad": 60000
+  },
+  "browser": {
+    "headless": true,
+    "slowMo": 0,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "testData": {
+    "excelPath": "./src/testdata/testData.xlsx",
+    "sheetName": "TestData"
+  },
+  "urls": {
+    "googleHome": "https://www.google.com",
+    "googleSearch": "https://www.google.com/search",
+    "gmailLogin": "https://accounts.google.com/signin/v2/identifier",
+    "gmailSignUp": "https://accounts.google.com/signup/v2/webcreateaccount",
+    "gmailInbox": "https://mail.google.com/mail/u/0/#inbox"
+  },
+  "retryConfig": {
+    "maxRetries": 3,
+    "retryDelay": 1000
+  }
+}
